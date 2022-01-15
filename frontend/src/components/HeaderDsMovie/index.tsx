@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import { FaGithub, FaTimes } from 'react-icons/fa';
 
 import styles from './styles.module.scss';
 
 import { BrandDefault } from '../BrandDefault';
 import { IHeaderDsMovie } from './IHeaderDsMovie';
-import { NavDefault } from '../NavDefault';
 import { ButtonDefault } from '../ButtonDefault';
 
 const HeaderDsMovie: React.FC<IHeaderDsMovie> = ({ title }) => {
