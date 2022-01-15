@@ -5,26 +5,22 @@ const PaginationDefault: React.FC = () => {
   return (
     <div className={styles.paginatoContainer}>
       <nav aria-label='Page navigation example'>
-        <ul className='pagination'>
-          <li className='page-item'>
-            <a className='page-link' href='#'>
+        <ul>
+          <li>
+            <a aria-disabled='true' href='#'>
               <FaAngleLeft />
             </a>
           </li>
-          <li className='page-item'>
-            <a className='page-link' href='#'>
-              1
-            </a>
+          <li>
+            <a href='#'>1</a>
           </li>
           <span>de</span>
-          <li className='page-item'>
-            <a className='page-link' href='#'>
-              23
-            </a>
+          <li>
+            <a href='#'>23</a>
           </li>
 
-          <li className='page-item'>
-            <a className='page-link' href='#'>
+          <li>
+            <a href='#'>
               <FaAngleRight />
             </a>
           </li>

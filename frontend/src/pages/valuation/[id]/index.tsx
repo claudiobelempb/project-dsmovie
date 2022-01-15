@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-import { HeaderDsMovie } from '../../components/HeaderDsMovie';
-import { ButtonDefault } from '../../components/ButtonDefault';
+import { HeaderDsMovie } from 'components/HeaderDsMovie';
+import { ButtonDefault } from 'components/ButtonDefault';
 import styles from './styles.module.scss';
 
-import ImgCard from '../../assets/images/dsmovie/card-img.svg';
-import { InputDefault } from '../../components/InputDefault';
+import ImgCard from 'assets/images/dsmovie/card-img.svg';
+import { InputDefault } from 'components/InputDefault';
 
 const Valuation: React.FC = () => {
   return (

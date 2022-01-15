@@ -116,12 +116,15 @@ a {
 ul {
   list-style: none;
 }
+
 img {
   max-width: 100%;
 }
+
 [disabled] {
   opacity: 0.6;
   cursor: not-allowed;
+  // pointer-events: none;
 }
 
 .input__default_group {
