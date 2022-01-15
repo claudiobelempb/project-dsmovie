@@ -1,7 +1,23 @@
 .paginatoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   // float: left;
   width: 100%;
-  text-align: center;
+  height: 40px;
+
+  & button {
+    height: 100%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray-border);
+  }
+
+  & p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   & nav {
     display: flex;
@@ -12,6 +28,7 @@
   & ul {
     text-align: left;
   }
+
   & li {
     display: inline-block;
     margin: 0 20px;
@@ -32,6 +49,9 @@
 
   & span {
     color: var(--blue-400);
+    height: 100%;
+    line-height: 40px;
+    padding: 0 1rem;
   }
 
   & a {
