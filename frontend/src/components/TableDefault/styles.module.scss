@@ -1,0 +1,81 @@
+.table__container {
+  width: 100%;
+  padding-top: 4rem;
+  & table {
+    width: 100%;
+    padding-top: 32px;
+    margin: 5px 0 2rem 0;
+    color: var(--text-600);
+    border-spacing: 0 0.5rem;
+    // border-collapse: collapse;
+    background-color: transparent;
+    text-align: left;
+    overflow: auto;
+    & th {
+      // width: 100%;
+      background-color: transparent;
+      color: var(--text-600);
+      background-color: transparent;
+      font-weight: 400;
+      font-style: normal;
+      /* border: 1px solid #000; */
+      padding: 0.5em;
+      font-weight: 400;
+    }
+
+    & td {
+      // width: 100%;
+      background-color: var(--white-100);
+      padding: 8px 0px 8px 0px;
+      border-bottom: 1px solid transparent;
+      text-align: left;
+      padding: 0.5em;
+      margin-bottom: 5px;
+      font-weight: 400;
+      border-radius: 5px;
+
+      &:first-child {
+        color: var(--text-300);
+      }
+
+      &.deposit {
+        color: var(--green-300);
+      }
+
+      &.withdraw {
+        color: var(--red-500);
+      }
+    }
+
+    // & > tr:first-child > td {
+    //   border-top: 2px solid #666;
+    // }
+    // & > tr:last-child > td {
+    //   border-bottom: 2px solid #666;
+    // }
+
+    /* Pega as td de uma em uma */
+    /* .table-default tbody tr:nth-child(1) td {
+            background: red;
+        } */
+    /* Pega todas td ímpar */
+    /* .table-default tbody tr:nth-child(odd) td {
+            background: red;
+        } */
+    /* Pega todas td pares */
+    // tr:nth-child(even) td {
+    //   background: #eee;
+    // }
+  }
+
+  /* TABLE ALTERNATE */
+  &__alteration {
+    border: 1px solid #ccc;
+    tbody tr:first-child td {
+      border-top: 1px solid #ccc;
+      tr:last-child td {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}

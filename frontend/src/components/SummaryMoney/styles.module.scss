@@ -1,0 +1,39 @@
+.main__container {
+  margin-top: -70px;
+  & article {
+    padding: 25px 10px;
+    height: 140px;
+    border-radius: 5px;
+    & div {
+      margin-bottom: 15px;
+    }
+  }
+  & h2 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  & strong {
+    font-size: 2rem;
+    font-weight: 400;
+    // margin-top: 15px;
+  }
+
+  &_modal {
+    & input {
+      background-color: var(--gray-900);
+    }
+
+    // & button {
+    //   border: 1px solid var(--gray-700);
+    // }
+  }
+
+  & .deposit {
+    color: var(--green-300);
+  }
+
+  & .withdraw {
+    color: var(--red-500);
+  }
+}
