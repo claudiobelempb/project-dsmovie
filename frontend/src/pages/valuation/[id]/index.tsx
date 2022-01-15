@@ -6,7 +6,6 @@ import styles from './styles.module.scss';
 
 import { InputDefault } from 'components/InputDefault';
 
-import ImgCard from 'assets/images/dsmovie/card-img.svg';
 const Valuation: React.FC = () => {
   const movie = {
     id: 1,
