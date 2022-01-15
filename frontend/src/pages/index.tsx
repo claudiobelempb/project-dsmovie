@@ -7,14 +7,19 @@ import styles from './styles.module.scss';
 import { PaginationDefault } from 'components/PaginationDefault';
 import { MovieCard } from 'components/MovieCard';
 import { api } from 'services/api';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { MoviePage } from 'types/MoviePage';
 
 const Home: NextPage = () => {
+  const [pageNumer, setPageNumber] = useState(0);
+  const [movies, setMovies] = useState<MoviePage[]>([]);
+
   useEffect(() => {
     api.get('/movies?page=0&size=12&sort=id,asc').then(resp => {
-      console.log(resp.data);
+      const data = resp.data as MoviePage;
+      setPageNumber(data.number);
     });
-  });
+  }, []);
 
   return (
     <div className=''>
