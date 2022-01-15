@@ -1,6 +1,5 @@
 import Image from 'next/image';
 
-import ImgCard from 'assets/images/dsmovie/card-img.svg';
 import ImgStarFull from 'assets/images/dsmovie/star-full.svg';
 import ImgStarHalf from 'assets/images/dsmovie/star-half.svg';
 import ImgStarEmpty from 'assets/images/dsmovie/star-empty.svg';
@@ -39,7 +38,7 @@ const MovieCard: React.FC = () => {
             size='link'
             type='button'
             className='bgcolor__blue_400'
-            href={'/valuation'}
+            href={`/valuation/${movie.id}`}
           />
         </div>
       </article>
