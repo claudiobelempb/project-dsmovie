@@ -8,12 +8,16 @@ import styles from './styles.module.scss';
 
 import ImgCard from '../assets/images/dsmovie/card-img.svg';
 import { ButtonDefault } from '../components/ButtonDefault';
+import { PaginationDefault } from 'components/PaginationDefault';
 
 const Home: NextPage = () => {
   return (
     <div className=''>
       <HeaderDsMovie title='Home' />
       <main className={`container`}>
+        <div className='content'>
+          <PaginationDefault />
+        </div>
         <div className='content'>
           <section className={`grid grid_3 ${styles.home__container}`}>
             <article className={`${styles.home__container_card}`}>
