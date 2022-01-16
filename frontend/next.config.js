@@ -2,6 +2,16 @@
 module.exports = {
   reactStrictMode: true,
 
+  async redirects() {
+    return [
+      {
+        source: '/valuation/:id',
+        destination: '/',
+        permanent: false
+      }
+    ];
+  },
+
   images: {
     domains: ['localhost', 'https://www.themoviedb.org', 'www.themoviedb.org']
   },
