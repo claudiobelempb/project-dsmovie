@@ -49,6 +49,5 @@ export interface IColors {
     | 'bgcolor__yellow_800'
     | 'bgcolor__pink_800'
     | 'bgcolor__pink_200'
-    | 'bgcolor__red_rgba'
-    | 'bgcolor__red_300';
+    | 'bgcolor__red_rgba';
 }
