@@ -159,56 +159,56 @@ img {
 }
 
 .deposit {
-  background-color: var(--green-rgba) !important;
+  background-color: var(--green-rgba);
 }
 
 .withdraw {
-  background-color: var(--red-rgba) !important;
-  // color: var(--white-100) !important;
+  background-color: var(--red-rgba);
+  // color: var(--white-100) ;
 }
 
 .bgcolor {
   &__100 {
-    background-color: var(--100) !important;
+    background-color: var(--100);
   }
 
   &__200 {
-    background-color: var(--200) !important;
+    background-color: var(--200);
   }
 
   &__300 {
-    background-color: var(--300) !important;
+    background-color: var(--300);
   }
 
   &__400 {
-    background-color: var(--400) !important;
+    background-color: var(--400);
   }
 
   &__500 {
-    background-color: var(--500) !important;
+    background-color: var(--500);
   }
 }
 
 .fontcolor {
   &__100 {
-    color: var(--100) !important;
+    color: var(--100);
   }
   &__200 {
-    color: var(--200) !important;
+    color: var(--200);
   }
   &__300 {
-    color: var(--300) !important;
+    color: var(--300);
   }
   &__400 {
-    color: var(--400) !important;
+    color: var(--400);
   }
   &__500 {
-    color: var(--500) !important;
+    color: var(--500);
   }
 }
 
 .dflex {
-  display: flex !important;
+  display: flex;
   &__row {
     flex-direction: row;
   }
@@ -258,16 +258,16 @@ img {
     }
   }
   &__center {
-    justify-content: center !important;
-    align-items: center !important;
+    justify-content: center;
+    align-items: center;
   }
   &__start {
-    justify-content: flex-start !important;
-    align-items: center !important;
+    justify-content: flex-start;
+    align-items: center;
   }
   &__end {
-    justify-content: flex-end !important;
-    align-items: center !important;
+    justify-content: flex-end;
+    align-items: center;
   }
   &__around {
     justify-content: space-around;
@@ -386,8 +386,8 @@ img {
 }
 
 .active {
-  color: #ffc500 !important;
-  font-weight: bold !important;
+  color: #ffc500;
+  font-weight: bold;
 }
 
 // Modal
@@ -596,8 +596,8 @@ img {
   }
 
   .content__events {
-    height: 100% !important;
-    padding: 40px 1rem !important;
+    height: 100%;
+    padding: 40px 1rem;
   }
 
   .content__events-items {

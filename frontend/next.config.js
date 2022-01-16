@@ -3,7 +3,7 @@ module.exports = {
   reactStrictMode: true,
 
   images: {
-    domains: ['localhost', 'www.themoviedb.org']
+    domains: ['localhost', 'https://www.themoviedb.org', 'www.themoviedb.org']
   },
 
   env: {
