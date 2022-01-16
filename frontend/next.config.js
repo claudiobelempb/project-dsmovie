@@ -2,6 +2,8 @@
 module.exports = {
   reactStrictMode: true,
 
+  distDir: 'frontend',
+
   async redirects() {
     return [
       {
