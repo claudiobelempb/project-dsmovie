@@ -33,12 +33,16 @@ const Home: NextPage = () => {
     });
   }, [pageNumer]);
 
+  const handlePageChange = (newPageNumber: number) => {
+    setPageNumber(newPageNumber);
+  };
+
   return (
     <div className=''>
       <HeaderDsMovie title='Home' />
       <main className={`container`}>
         <div className='content'>
-          <PaginationDefault />
+          <PaginationDefault page={page} onClick={handlePageChange} />
         </div>
         <div className='content'>
           <section className={`grid grid_3 ${styles.home__container}`}>

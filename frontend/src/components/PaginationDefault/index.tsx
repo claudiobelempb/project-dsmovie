@@ -1,15 +1,31 @@
 import { ButtonDefault } from 'components/ButtonDefault';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import { MoviePage } from 'types/MoviePage';
 import styles from './styles.module.scss';
 
-const PaginationDefault: React.FC = () => {
+type PaginationProps = {
+  page: MoviePage;
+  onClick: Function;
+};
+
+const PaginationDefault: React.FC<PaginationProps> = ({ page, onClick }) => {
   return (
     <div className={styles.paginatoContainer}>
-      <ButtonDefault size='icon' type='button' disabled={true}>
+      <ButtonDefault
+        onClick={() => onClick(page.number - 1)}
+        size='icon'
+        type='button'
+        disabled={page.first}
+      >
         <FaAngleLeft />
       </ButtonDefault>
-      <span>{`${1} de ${3}`}</span>
-      <ButtonDefault size='icon' type='button' disabled={false}>
+      <span>{`${page.number + 1} de ${page.totalPages}`}</span>
+      <ButtonDefault
+        onClick={() => onClick(page.number + 1)}
+        size='icon'
+        type='button'
+        disabled={page.last}
+      >
         <FaAngleRight className='dsmovie-flip-horizontal' />
       </ButtonDefault>
 
