@@ -28,6 +28,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     api.get(`/movies?page=${pageNumer}&size=12&sort=id,asc`).then(resp => {
       const data = resp.data as MoviePage;
+      console.log('Movie', data);
 
       setPage(data);
     });

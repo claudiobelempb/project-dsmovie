@@ -5,5 +5,9 @@ module.exports = {
 
   images: {
     domains: ['localhost', 'https://www.themoviedb.org', 'www.themoviedb.org']
+  },
+
+  env: {
+    NEXT_PRODUCTION: process.env.NEXT_PRODUCTION
   }
 };
